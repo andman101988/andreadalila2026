@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Andrea & Dalila - 26 Luglio 2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="img/logo.png">
+
+<style>
+:root {
+    --primary: #6b7f6a;
+    --background: #faf9f7;
+    --accent: #e6dfd6;
+    --text: #333;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+    opacity: 0;
+    animation: fadeInSite 1.5s ease forwards;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.2em; margin-bottom: 30px; }
+
+/* HERO */
+.hero {
+    background: var(--accent);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOTO */
+.photo {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 40px auto;
+    border-radius: 12px;
+    border: 2px solid var(--primary);
+    box-shadow: 0 10px 25px rgba(107,127,106,0.15);
+}
+
+/* COUNTDOWN */
+#countdown {
+    font-size: 2em;
+    color: var(--primary);
+    background: rgba(255,255,255,0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* LISTE */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 50px;
+    background: var(--accent);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.4em; }
+    #countdown { font-size: 1.2em; }
+    section { padding: 50px 15px; }
+}
+
+@keyframes fadeInSite {
+    from { opacity: 0; transform: scale(1.02); }
+    to { opacity: 1; transform: scale(1); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HOME -->
+<section class="hero visible">
+    <h1>Andrea & Dalila</h1>
+    <h2>26 Luglio 2026</h2>
+
+    <p id="countdown"></p>
+
+    <img src="img/copertina.jpeg" class="photo">
+</section>
+
+<!-- STORIA -->
+<section>
+    <h2>La nostra storia</h2>
+
+    <p>
+        Tutto ebbe inizio nel dicembre 2019. Andrea lavorava a Bergamo, Dalila era la colonna portante di Taranto. Galeotto fu un bar di Grottaglie e degli amici in comune che, evidentemente, ne sapevano più di loro.
+    </p>
+
+    <p>
+        A dire il vero, c'erano stati dei "precedenti": si erano già incrociati qualche sera prima in un altro locale, ma Andrea — con la sua proverbiale capacità di osservazione paragonabile a quella di una talpa — non si era accorto di nulla. Dalila, invece, aveva già inquadrato il bersaglio.
+    </p>
+
+    <p>
+        La domanda che vi starete ponendo è: ma passavano tutto il giorno nei bar della provincia? La risposta è: "Sì, soprattutto la Sposa". Ed è probabilmente per questo che, qualche anno dopo, ha detto sì alla proposta.
+    </p>
+
+    <h3>La proposta</h3>
+
+    <p>
+        Andrea ha deciso di rischiare il tutto per tutto il 9 agosto 2025, tra i vicoli di Taranto Vecchia. Dalila ha risposto SI (e non era colpa del Gin Tonic).
+    </p>
+
+    <img src="img/proposta.jpeg" class="photo">
+</section>
+
+<!-- EVENTO -->
+<section>
+    <h2>Il grande giorno</h2>
+
+    <p><strong>26.07.2026 – ore 17:30</strong></p>
+    <p>Il lieto evento si terrà presso la 
+Masseria Bonelli – Noci (BA)</p>
+</section>
+
+<!-- MAPPA -->
+<section>
+    <h2>Come arrivare</h2>
+
+    <iframe
+        src="https://www.google.com/maps?q=Masseria+Bonelli+Noci&output=embed"
+        width="100%" height="350" style="border:0;">
+    </iframe>
+</section>
+
+<!-- PROGRAMMA -->
+<section>
+    <h2>Programma</h2>
+
+    <ul>
+        <li>Cerimonia – 17:30</li>
+        <li>Aperitivo – 19:00</li>
+        <li>Cena – 20:00</li>
+        <li>Festa</li>
+    </ul>
+</section>
+
+<!-- RSVP -->
+<section>
+    <h2>Conferma presenza</h2>
+
+    <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeNFJycUY5sDRG0LJ8cR8lyosPCLnkj8WNu6F7Wl9Y6XocOiA/viewform?usp=header"
+        width="100%" height="600" style="border:0;">
+    </iframe>
+</section>
+
+<!-- LISTA NOZZE -->
+<section>
+    <h2>Viaggio di nozze</h2>
+
+    <p>
+        Il nostro viaggio di nozze ci porterà in Perù, una terra dove storia e natura si incontrano tra città vivaci, altopiani silenziosi e antiche rovine sospese tra le montagne.
+
+Da Lima a Cusco, fino al Lago Titicaca e alle valli sacre, sarà un percorso tra paesaggi diversi e suggestivi, tra modernità e tradizione.
+
+Non sarà solo un viaggio, ma l’inizio del nostro “noi”, oltre il giorno del matrimonio.
+
+Se vorrete contribuire a realizzare il nostro sogno, porteremo con noi anche il vostro pensiero tra le Ande e il Pacifico:
+    </p>
+
+    <p><strong>IBAN:</strong> IT71N0357601601010008019107</p>
+    <p><strong>Intestatario:</strong> Andrea Manigrasso</p>
+</section>
+
+<!-- INFO -->
+<section>
+    <h2>Info utili</h2>
+
+    <ul>
+    <li>👗 Gradito l'abito elegante, ma assicuratevi che sia comodo per ballare fino all'alba</li>
+    <li>🚗 Parcheggio gratuito in struttura</li>
+    <li>📞 Contatti: Andrea: 3494024704 - Dalila: 3334831922
+</ul>
+</section>
+
+<footer>
+    Andrea & Dalila • 26 Luglio 2026
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+}, { threshold: 0.1 });
+
+sections.forEach(section => observer.observe(section));
+
+const countdown = document.getElementById("countdown");
+const weddingDate = new Date("July 26, 2026 17:30:00").getTime();
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    const days = Math.floor(distance / (1000*60*60*24));
+
+    countdown.innerHTML = `Mancano ${days} giorni 💍`;
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+window.addEventListener("load", () => {
+    document.body.style.opacity = "1";
+});
+</script>
+
+</body>
+</html>
